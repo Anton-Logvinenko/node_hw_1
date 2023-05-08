@@ -32,25 +32,6 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
       console.warn("Unknown action!");
   }
 };
-
-// invokeAction({action: 'list'})
-// invokeAction({ action: "get", id: "drsAJ4SHPYqZeG-83QTVW" });
-// invokeAction({ action: "remove", id: "AeHIrLTr6JkxGE6SN-0Rw" });
-// // invokeAction({
-// //   action: "add",
-// //   name: "Alina",
-// //   email: "alina@gamail.com",
-// //   phone: "2342342",
-// // });
-// invokeAction({
-//     action: "update",
-//     id: "AeHIrLTr6JkxGE6SN-0Rw",
-//     name: "Anton",
-//     email: "anton@gamail.com",
-//     phone: "2342342",
-//   });
-
-
 program
   .option("-a, --action <type>")
   .option("-i, --id <type>")
